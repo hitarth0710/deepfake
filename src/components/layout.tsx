@@ -7,10 +7,10 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background">
       <Navbar />
-      <main className="pt-16">{children}</main>
-      <Footer />
+      <main className="relative z-10">{children}</main>
+      <Footer className="relative z-20" />
     </div>
   );
 }
