@@ -13,7 +13,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/lib/use-toast";
 import { useNavigate } from "react-router-dom";
 
-export default function AudioDetection() {
+function AudioDetection() {
   const [file, setFile] = useState<File | null>(null);
   const [analyzing, setAnalyzing] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -184,3 +184,5 @@ export default function AudioDetection() {
     </div>
   );
 }
+
+export default AudioDetection;
